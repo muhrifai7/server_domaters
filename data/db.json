@@ -1,0 +1,10 @@
+{
+  "ids": {
+    "Article": 1
+  },
+  "models": {
+    "Article": {
+      "5": "{\"title\":\"string\",\"subtitle\":\"string\",\"desc\":\"string\",\"author\":\"string\",\"published\":true,\"id\":5}"
+    }
+  }
+}
