@@ -1,4 +1,4 @@
-# todo-backends
+# domaters-backends
 
 This application is generated using [LoopBack 4 CLI](https://loopback.io/doc/en/lb4/Command-line-interface.html) with the
 [initial project layout](https://loopback.io/doc/en/lb4/Loopback-application-layout.html).
@@ -42,6 +42,13 @@ To force a full build by cleaning up cached artifacts:
 npm run clean
 npm run build
 ```
+## Api Specs
+
+```
+Api Create
+```
+
+for improve scale deployment
 
 ## Fix code style and formatting issues
 
