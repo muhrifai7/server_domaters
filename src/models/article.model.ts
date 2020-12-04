@@ -39,6 +39,42 @@ export class Article extends Entity {
   author?: string;
 
   @property({
+    type: 'string',
+    postgresql: {columnName: 'categories', dataType: 'text', dataLength: null, dataPrecision: null, dataScale: null, nullable: 'YES'},
+  })
+  categories?: string;
+
+   @property({
+    type: 'string',
+    postgresql: {columnName: 'image_url', dataType: 'text', dataLength: null, dataPrecision: null, dataScale: null, nullable: 'YES'},
+  })
+  image_url?: string;
+
+   @property({
+    type: 'string',
+    postgresql: {columnName: 'technology', dataType: 'text', dataLength: null, dataPrecision: null, dataScale: null, nullable: 'YES'},
+  })
+  technology?: string;
+
+   @property({
+    type: 'string',
+    postgresql: {columnName: 'meta_image', dataType: 'text', dataLength: null, dataPrecision: null, dataScale: null, nullable: 'YES'},
+  })
+  meta_image?: string;
+
+  @property({
+    type: 'string',
+    postgresql: {columnName: 'conclusion', dataType: 'text', dataLength: null, dataPrecision: null, dataScale: null, nullable: 'YES'},
+  })
+  conclusion?: string;
+
+  @property({
+    type: 'string',
+    postgresql: {columnName: 'last_description', dataType: 'text', dataLength: null, dataPrecision: null, dataScale: null, nullable: 'YES'},
+  })
+  last_description?: string;
+
+  @property({
     type: 'boolean',
     required: true,
     postgresql: {columnName: 'published', dataType: 'boolean', dataLength: null, dataPrecision: null, dataScale: null, nullable: 'NO'},

@@ -4,12 +4,11 @@ import {juggler} from '@loopback/repository';
 const config = {
   name: 'db',
   connector: 'postgresql',
-  // url: 'postgres://postgres:admin@localhost/testdb',
-  host: 'localhost',
+  host: 'ec2-23-23-88-216.compute-1.amazonaws.com',
   port: 5432,
-  user: 'postgres',
-  password: 'admin',
-  database: 'testdb',
+  user: 'xsktxgyoulnvdr',
+  password: 'a7070abcbf10953c54596fd3f45b07b15f457d775ec85ca55fe8c9468f160126',
+  database: 'detonloch1ev4n',
   debug:true
 };
 
