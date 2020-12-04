@@ -4,12 +4,26 @@ import {juggler} from '@loopback/repository';
 const config = {
   name: 'db',
   connector: 'postgresql',
-  host: 'ec2-23-23-88-216.compute-1.amazonaws.com',
+  // url: 'postgres://postgres:root@localhost/testdb',
+  host: 'localhost',
   port: 5432,
-  user: 'xsktxgyoulnvdr',
-  password: 'a7070abcbf10953c54596fd3f45b07b15f457d775ec85ca55fe8c9468f160126',
-  database: 'detonloch1ev4n',
-  debug:true
+  user: 'postgres',
+  password: 'admin',
+  database: 'testdb',
+  debug:true,
+  min: 5,
+  max: 200,
+  idleTimeoutMillis: 60000,
+  ssl: false
+  //server
+  // name: 'db',
+  // connector: 'postgresql',
+  // host: 'ec2-23-23-88-216.compute-1.amazonaws.com',
+  // port: 5432,
+  // user: 'xsktxgyoulnvdr',
+  // password: 'a7070abcbf10953c54596fd3f45b07b15f457d775ec85ca55fe8c9468f160126',
+  // database: 'detonloch1ev4n',
+  // debug:true
 };
 
 // Observe application's life cycle to disconnect the datasource when

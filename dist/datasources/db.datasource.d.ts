@@ -11,6 +11,10 @@ export declare class DbDataSource extends juggler.DataSource implements LifeCycl
         password: string;
         database: string;
         debug: boolean;
+        min: number;
+        max: number;
+        idleTimeoutMillis: number;
+        ssl: boolean;
     };
     constructor(dsConfig?: object);
 }
